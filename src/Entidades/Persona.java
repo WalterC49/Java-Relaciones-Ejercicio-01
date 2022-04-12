@@ -60,6 +60,10 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", dni=" + dni + ", perro=" + perro + '}';
+        return  "Nombre: " + nombre 
+                + " - Apellido: " + apellido 
+                + " - Edad: " + edad 
+                + " - DNI: " + dni 
+                + " - Perro: (" + perro+")";
     }
 }

@@ -1,15 +1,17 @@
 package Entidades;
 
+import Enumeraciones.TamanioPerro;
+
 public class Perro {
     private String nombre;
     private String raza;
     private Integer edad;
-    private String tamanio;
+    private TamanioPerro tamanio;
 
     public Perro() {
     }
 
-    public Perro(String nombre, String raza, Integer edad, String tamanio) {
+    public Perro(String nombre, String raza, Integer edad, TamanioPerro tamanio) {
         this.nombre = nombre;
         this.raza = raza;
         this.edad = edad;
@@ -40,16 +42,18 @@ public class Perro {
         this.edad = edad;
     }
 
-    public String getTamanio() {
+    public TamanioPerro getTamanio() {
         return tamanio;
     }
 
-    public void setTamanio(String tamanio) {
+    public void setTamanio(TamanioPerro tamanio) {
         this.tamanio = tamanio;
     }
 
     @Override
     public String toString() {
-        return "Perro{" + "nombre=" + nombre + ", raza=" + raza + ", edad=" + edad + ", tamanio=" + tamanio + '}';
+        return  "Nombre: " + nombre 
+                + " - Raza: " + raza + " - edad: " + edad 
+                + " - Tamaño: " + tamanio.getValor();
     }
 }
